@@ -2,26 +2,26 @@
 % Please edit documentation in R/gradconj.R
 \name{YANKAM}
 \alias{YANKAM}
-\title{algorithme du gradient conjugué}
+\title{conjugate gradient algorithm}
 \usage{
 YANKAM(A, b, x0, tol, max_iter)
 }
 \arguments{
-\item{A}{une matrice definie positive et symetrique}
+\item{A}{positive definite symmetric matrix}
 
-\item{b}{un vecteur}
+\item{b}{a vector}
 
-\item{x0}{valeur un intiale}
+\item{x0}{initial value}
 
 \item{tol}{tolerance}
 
-\item{max_iter}{nombre maximum d'ittération}
+\item{max_iter}{maximum number of iterations}
 }
 \value{
-la solution de Ax=b
+solution Ax=b
 }
 \description{
-algorithme du gradient conjugué
+conjugate gradient algorithm
 }
 \examples{
  A <- matrix(c(4, 1, 1, 3), nrow = 2)
