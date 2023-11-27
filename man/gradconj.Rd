@@ -29,5 +29,5 @@ b <- c(1, 2)
 x0 <- c(0, 0)
 tol <- 1e-10
 maxiter <- 1000
-YANKAM(A, b, x0, tol, maxiter)
+gradconj(A, b, x0, tol, maxiter)
 }

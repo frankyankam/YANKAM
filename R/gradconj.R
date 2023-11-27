@@ -13,7 +13,7 @@
 #' x0 <- c(0, 0)
 #' tol <- 1e-10
 #' maxiter <- 1000
-#' YANKAM(A, b, x0, tol, maxiter)
+#' gradconj(A, b, x0, tol, maxiter)
 #' @export
 gradconj<- function(A, b, x0, tol, max_iter,plot_chart=TRUE) {
   n <- length(x0)
@@ -31,9 +31,10 @@ gradconj<- function(A, b, x0, tol, max_iter,plot_chart=TRUE) {
       break
     }
     eigenvalues <- eigen(A)$values
-    plot(x, type = "l", main = "Valeurs de x au fil des itérations")
+    plot(x, type = "o", main = "Valeurs de x au fil des itérations")
     abline(h = eigenvalues[1], col = "red", lty = 2)
     abline(h = eigenvalues[2], col = "blue", lty = 2)
   }
   return(x)
 }
+
