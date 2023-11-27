@@ -1,0 +1,10 @@
+Package: YANKAM
+Title: Algorithme du gradient conjugué
+Version: 0.0.0.9000
+Authors@R: 
+    person("Frank", "YANKAM", , "frankyankam19@gmail.com", role = c("aut", "cre"))
+Description: Ce package est utilisé pour resoudre les systèmes d'equation dont la matrice est symetrique definie positive. Elle repose sur la recherche de directions successives permettant d'atteindre une approximation de la solution exacte
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
