@@ -15,7 +15,7 @@
 #' maxiter <- 1000
 #' YANKAM(A, b, x0, tol, maxiter)
 #' @export
-YANKAM<- function(A, b, x0, tol, max_iter,plot_chart=TRUE) {
+gradconj<- function(A, b, x0, tol, max_iter,plot_chart=TRUE) {
   n <- length(x0)
   x <- x0
   r <- b - A %*% x
